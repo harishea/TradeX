@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>TradeX</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="left">
+      <a href="#" style="text-decoration: none">
+        <h1 style="
+              font-family: poppins;
+              font-weight: 600;
+              color: wheat;
+              font-size: xx-large;
+            ">
+          TradeX
+        </h1>
+      </a>
+    </div>
+    <div class="right">
+      <button class="btn btn-outline-light m-2 mx-2" onclick="login()">Login</button>
+      <button class="btn btn-outline-light m-2 mx-2" onclick="signup()">Sign up</button>
+    </div>
+  </div>
+  <div class="main">
+    <h5 class="small-txt">Your Gateway to Smarter Investments</h5>
+    <h1 class="lg-txt">Invest, Trade & Grow Your Wealth with Confidence.</h1>
+    <div class="card-container">
+      <div class="card card1">
+        <div class="price">₹0</div>
+        <h2>Account Opening Fee</h2>
+        <p>Open your Demat/Trading account for free</p>
+      </div>
+
+      <div class="card card2">
+        <div class="price">₹0</div>
+        <h2>No Account maintenance Charges</h2>
+        <p>Maintain your account for free</p>
+      </div>
+
+      <div class="card card3">
+        <div class="price">₹0</div>
+        <h2>Free Access To Wealthbaskets</h2>
+        <p>Pre-selected baskets curated by experts, that are rebalanced regularly for optimal performance</p>
+      </div>
+    </div>
+  </div>
+  <div class="overlay">
+    <div class="overlay-black"></div>
+    <div class="overlay-box1" id="box1">
+      <h2>Login</h2>
+      <button class="btn-1" id="btn-1">X</button>
+      <form>
+        <input type="text" placeholder="User name">
+        <input type="password" placeholder="Password">
+        <button class="btn-2" onclick="logined()">LOGIN</button>
+        <p>Don't have account? <a href="#">Sign up</a></p>
+      </form>
+    </div>
+
+    <div class="overlay-box2" id="box2">
+      <h2>Sign Up</h2>
+      <button onclick="cancel2()" class="btn-1" id="btn-1">X</button>
+      <form>
+        <input type="text" placeholder="User name">
+        <input type="password" placeholder="New Password">
+        <input type="password" placeholder="Confirm Password">
+        <button class="btn-2" onclick="signuped()">SIGN UP</button>
+        <p>Already have account? <a href="#">Login</a></p>
+      </form>
+    </div>
+    <h1 class="main-content">One Stop for all your investments</h1>
+    <div class="main-container">
+      <a href="#">
+        <div class="container container1">
+          <img src="Container images/stocks.C3f-dYdx.svg">
+          <h2>Stocks</h2>
+          <p>Explore stock collections to screen stocks based on trending themes and strategies</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="container container2">
+          <img src="Container images/etf.pgETuBMm.svg">
+          <h2>ETF</h2>
+          <p>Check trading ETFs and browse smartly through various categories.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="container container3">
+          <img src="Container images/f_o.CN8H4VuA.svg">
+          <h2>F&O</h2>
+          <p>Hedge your portfolio or deploy trading strategies with Futures & Options </p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="container container4">
+          <img src="Container images/wealthbasket.CvIeI_2B.svg">
+          <h2>WealthBasket</h2>
+          <p>Ready-made baskets of stocks & ETFs curated by Shares.Market Research</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="container container5">
+          <img src="Container images/ipo.C8Bf-nLc.svg">
+          <h2>IPOs</h2>
+          <p>Apply to upcoming IPOs with ease & Check out related important details.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="container container6">
+          <img src="Container images/mutualFunds.CCXfgchX.svg">
+          <h2>Mutual Funds</h2>
+          <p>Explore Mutual Fund schemes and start investing in the one suited to your needs</p>
+        </div>
+      </a>
+    </div>
+    <div class="demat-account">
+      <div class="leftside">
+        <div class="para">
+          Start Investing in
+          3 Easy Steps
+        </div>
+        <a href="#">
+          <div class="direction">Open Free Demat account <img
+              src="svg icons/right-arrow-in-circular-button-outline-svgrepo-com.svg" alt=""></div>
+        </a>
+      </div>
+      <div class="rightside">
+        <div class="cont1">
+          <h1>1</h1>
+          <h2>Click</h2>
+          <p>Click on "Open Free Demat Account"</p>
+        </div>
+        <div class="cont2">
+          <h1>2</h1>
+          <h2>Fill</h2>
+          <p>Fill in your details and upload the documents</p>
+        </div>
+        <div class="cont3">
+          <h1>3</h1>
+          <h2>Complete</h2>
+          <p>Complete e-KYC process for quick verification</p>
+        </div>
+      </div>
+    </div>
+    <div class="marketing">
+      <img src="Marketing Content/Group 1.png" alt="">
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container-1">
+      <div class="content-1">
+        <h1>TradeX</h1>
+        <p>Registered Office Address: Office - 2, Floor 3, Wing A, Block A, EST Nagar 3rd Street, Podaturpet,
+          Old Police station, pallipat taluk,Tiruvallur,Tamil Nadu - 631208</p>
+      </div>
+      <div class="content-2">
+        <a href="#">Links</a><br>
+        <a href="#">Stocks</a><br>
+        <a href="#">WealthBasket</a><br>
+        <a href="#">IPO</a><br>
+        <a href="#">ETFs</a><br>
+        <a href="#">Futures & Options</a><br>
+        <a href="#">Buzz</a><br>
+        <a href="#">Help center</a><br>
+        <a href="#">Calculators</a><br>
+      </div>
+      <div class="content-3">
+        <h3>Downloads</h3>
+        <img src="Marketing Content/google-play._k32PZCA.svg" alt="">
+        <img src="Marketing Content/app-store.Ctmbp6wo.svg" alt="">
+        <img src="Marketing Content/indus-store.CgJ9XD7U.svg" alt="">
+      </div>
+    </div>
+    <hr>
+    <div class="container-2">
+      <p><b>Quick Links</b>:
+        Open Demat and Trading Account
+        View Collateral Details</p>
+      <p><b>Top stocks by market capitalization:</b>
+
+        •Power Grid Corporation of India Ltd.
+        •Larsen & Toubro Ltd.
+        •Mahindra & Mahindra Ltd.
+        •Cipla Ltd.
+        •Bharat Petroleum Corporation Ltd.
+        •Tata Consumer Products Ltd.
+        •HDFC Bank Ltd.
+        •Sun Pharmaceutical Industries Ltd.
+        •Maruti Suzuki India Ltd.
+        •Apollo Hospitals Enterprise Ltd.
+        •Coal India Ltd.
+        •Axis Bank Ltd.
+        •Hero MotoCorp Ltd.
+        •Kotak Mahindra Bank Ltd.
+        •Tata Steel Ltd.
+        •IndusInd Bank Ltd.
+        •UltraTech Cement Ltd.
+        •State Bank of India
+        •Grasim Industries Ltd.
+        •NTPC Ltd.
+        •Bajaj Auto Ltd.
+        •Bajaj Finance Ltd.
+        •UPL Ltd.
+        •Oil And Natural Gas Corporation Ltd.
+        •Eicher Motors Ltd.
+        •Adani Ports & Special Economic Zone Ltd.
+        •LTIMindtree Ltd.
+        •ICICI Bank Ltd.
+        •Asian Paints Ltd.
+        •JSW Steel Ltd.
+        •Dr. Reddy's Laboratories Ltd.
+        •Divi's Laboratories Ltd.
+        •HDFC Life Insurance Company Ltd.
+        •Tata Consultancy Services Ltd.
+        •Bajaj Finserv Ltd.
+        •Hindustan Unilever Ltd.
+        •Infosys Ltd.
+        •Britannia Industries Ltd.
+        •Bharti Airtel Ltd.
+        •SBI Life Insurance Company Ltd.
+        •Tech Mahindra Ltd.
+        •Wipro Ltd.
+        •ITC Ltd.
+        •Tata Motors Ltd.
+        •Titan Company Ltd.
+        •HCL Technologies Ltd.
+        •Nestle India Ltd.
+        •Hindalco Industries Ltd.
+        •Adani Enterprises Ltd.
+        •Reliance Industries Ltd.
+        •Jio Financial Services Ltd.</p>
+    </div>
+    <hr>
+    <span class="para-tag">
+      <center>© Copyright TradeX All Rights Reserved</center>
+    </span>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
